@@ -1,0 +1,21 @@
+ENDPOINTS
+
+--- AUTH ---
+POST: /api/auth/signup (email, username, password)
+POST: /api/auth/login (username, password)
+POST: /api/auth/logout
+
+--- USER ---
+GET: /api/users/all
+PUT: /api/users/update-user (username)
+DELETE: /api/users/delete-account
+
+--- FIXTURE ---
+GET: /api/fixtures/:id
+GET: /api/fixtures/date/:date
+
+--- PREDICTION ---
+GET: /api/predictions/:id
+GET: /api/predictions/user-predictions/:id
+POST: /api/predictions/add-prediction (fixture_api, score)
+PUT: /api/predictions/score/:id (score)
